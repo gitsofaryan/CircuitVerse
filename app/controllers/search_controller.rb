@@ -7,7 +7,7 @@ class SearchController < ApplicationController
     resource = params[:resource]
     query_params = params
 
-    @results, template = query(resource, query_params)
+    @results, template, @has_next_page, @next_cursor = query(resource, query_params)
 
     if template.present?
       render template

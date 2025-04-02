@@ -38,7 +38,7 @@ class Project < ApplicationRecord
 
   include PgSearch::Model
   accepts_nested_attributes_for :project_datum
-  pg_search_scope :text_search, against: %i[name description], using: {
+  pg_search_scope :text_search, against: { name: 'A', description: 'B' }, using: {
     tsearch: {
       dictionary: "english", tsvector_column: "searchable"
     }

@@ -1,5 +1,5 @@
 .search-match {
-  background-color: $search-yellow;
+  background-color: #fff3cd; /* Bootstrap's bg-warning-subtle */
 }
 
 .search-no-results-container {
@@ -8,13 +8,11 @@
 
 .search-no-results-image {
   margin-top: 20px;
+  text-align: center;
 
   img {
-    display: block;
-    margin-bottom: 20px;
-    margin-left: auto;
-    margin-right: auto;
     max-width: 40%;
+    margin-bottom: 20px;
   }
 }
 
@@ -23,17 +21,15 @@
 }
 
 .search-card-container {
-  border: 1px solid $form-border-grey;
-  border-radius: 0;
-  margin-top: 20px;
+  border: 1px solid #dee2e6; /* Bootstrap's border color */
   padding: 20px 8px;
+  margin-top: 20px;
 }
 
 .search-tag-search-container {
-  border: 1px solid $form-border-grey;
-  border-radius: 0;
-  margin-top: 20px;
+  border: 1px solid #dee2e6;
   padding: 20px 8px;
+  margin-top: 20px;
 }
 
 .search-image {
@@ -42,8 +38,7 @@
 }
 
 .search-view-count-container {
-  color: $black;
-  display: block;
+  color: #212529; /* Bootstrap's text color */
   font-size: 14px;
   font-weight: 600;
   margin-bottom: 10px;
@@ -52,28 +47,21 @@
 }
 
 .search-star-count-icon {
-  color: $star-yellow;
+  color: #ffc107; /* Bootstrap's star color */
 }
 
 .search-user-data-container {
-  display: block;
   text-align: left;
 }
 
 .search-user-image {
-  border: 1px solid $shadow-grey;
-  border-radius: 50%;
+  border: 1px solid #6c757d; /* Bootstrap's secondary color */
   height: 60px;
   width: 60px;
 }
 
 .search-user-link {
   display: block;
-  text-decoration: none;
-
-  &:hover {
-    text-decoration: none;
-  }
 }
 
 .search-project-name {
@@ -94,15 +82,12 @@
 }
 
 .search-tag-container {
-  display: block;
-  margin-bottom: 15px;
-  padding-left: 0;
   text-align: left;
   width: 90%;
+  margin-bottom: 15px;
 }
 
 .search-primary-button {
-  margin-top: 20px;
   padding: 5px 20px;
 }
 
@@ -114,7 +99,6 @@
 
 .search-project-description {
   height: 300px;
-  margin-left: 15px;
   overflow-y: auto;
   text-align: left;
   width: 100%;
@@ -138,8 +122,6 @@
   display: block;
   height: 160px;
   margin-bottom: 20px;
-  object-fit: cover;
-  width: fit-content;
   border-radius: 8px;
   aspect-ratio: 1/1;
   object-fit: cover;
@@ -147,13 +129,10 @@
 }
 
 .search-username-container {
-  margin-left: auto;
-  margin-right: auto;
   text-align: center;
 }
 
 .search-username {
-  display: block;
   font-size: 25px;
   font-weight: 500;
 }
@@ -176,7 +155,6 @@
   padding-right: 30px;
 }
 
-//breakpoints
 @media (max-width: 768px) {
   .search-user-data {
     padding-bottom: 20px;
